@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprar Fluxo Titânico | Essência Real</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="novo 1.html">
+                <i class=""><img class="w-50" src="Imagens/logo da empresa ofc.png" alt=""></i>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto h5">
+                    <li class="nav-item">
+                        <a class="nav-link" href="novo 1.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Perfumes.html">Perfumes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="HISTORIA.HTML">Nossa História</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#depoimentos">Depoimentos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="equipe.html">Equipe</a>
+                    </li>
+                </ul>
+                <div class="ms-3">
+                    <a href="login.html" class="btn btn-outline-warning me-2">Entrar</a>
+                    <a href="cadastro.html" class="btn btn-warning">Cadastrar</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="py-5">
+        <div class="container">
+            <nav aria-label="breadcrumb" class="mb-4">
+                <ol class="breadcrumb h6">
+                    <li class="breadcrumb-item"><a href="novo 1.html" class="text-decoration-none">Início</a></li>
+                    <li class="breadcrumb-item"><a href="Perfumes.html" class="text-decoration-none">Perfumes</a></li>
+                    <li class="breadcrumb-item"><a href="#" class="text-decoration-none">Fresco</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Fluco Titânico</li>
+                </ol>
+            </nav>
+
+            <div class="row">
+                <div class="col-lg-6 mb-5">
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <div class="card border-0 bg-light">
+                                <img src="Imagens/TITANICO.jpg" 
+                                     class="card-img-top" alt="Perfume Aurora" style="height: 500px; object-fit: cover;">
+                            </div>
+                        </div>
+                        <div class="card border-0 bg-light">
+                            <div class="card-body p-4">
+                                <form id="formCompra">
+                                    <div class="row g-3">
+                                        <div class="col-md-4">
+                                            <label for="quantidade" class="form-label fw-bold">Quantidade</label>
+                                            <div class="input-group">
+                                                <button class="btn btn-outline-secondary" type="button" id="decrementar">-</button>
+                                                <input type="number" class="form-control text-center" id="quantidade" value="1" min="1" max="10">
+                                                <button class="btn btn-outline-secondary" type="button" id="incrementar">+</button>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-8">
+                                            <label class="form-label fw-bold">Volume</label>
+                                            <div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="volume" id="30ml" value="30ml" checked>
+                                                    <label class="form-check-label" for="30ml">30ml</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="volume" id="50ml" value="50ml">
+                                                    <label class="form-check-label" for="50ml">50ml (+R$ 49,90)</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="volume" id="100ml" value="100ml">
+                                                    <label class="form-check-label" for="100ml">100ml (+R$ 89,90)</label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <div class="d-grid gap-2 d-md-flex">
+                                                <button type="submit" class="btn btn-warning btn-lg flex-fill">
+                                                    <i class="bi bi-bag-check me-2"></i>Comprar Agora
+                                                </button>
+                                                <button type="button" class="btn btn-outline-warning btn-lg">
+                                                    <i class="bi bi-heart me-2"></i>Lista de Desejos
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <div class="d-flex justify-content-between small text-muted">
+                                                <div>
+                                                    <i class="bi bi-shield-check text-success me-1"></i>
+                                                    Compra segura
+                                                </div>
+                                                <div>
+                                                    <i class="bi bi-arrow-clockwise text-success me-1"></i>
+                                                    Troca grátis
+                                                </div>
+                                                <div>
+                                                    <i class="bi bi-truck text-success me-1"></i>
+                                                    Entrega em 3 dias
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="ps-lg-4">
+                        <div class="mb-3">
+                            <span class="badge bg-success mb-2">Em Estoque</span>
+                        </div>
+                        
+                        <h1 class="h2 fw-bold mb-3">Fluxo Titânico</h1>
+                        <p class="text-muted mb-4">Hortelã, aldeídos gelados e titânio. Essência metálica, fria e extremamente revigorante.</p>
+
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="me-3">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-half text-warning"></i>
+                                <span class="text-muted ms-2">(4.9)</span>
+                            </div>
+                            <a href="#avaliacoes" class="text-decoration-none text-muted">
+                                <small>235 avaliações</small>
+                            </a>
+                            
+                        </div>
+
+                        <div class="mb-4">
+                            <h3 class="text-warning fw-bold">R$ 192,90</h3>
+                            <p class="text-success mb-0">
+                                <i class="bi bi-truck"></i> Frete grátis para todo Brasil
+                            </p>
+                        </div>
+
+                        <div class="mb-4">
+                            <p>Um aroma ultra moderno e poderoso que une o frescor intenso com um toque metálico. É um perfume frio, revigorante e ideal para quem busca uma assinatura ousada.</p>
+                        </div>
+
+                        <div class="mb-4">
+                            <h6 class="fw-bold mb-3">Características:</h6>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <i class="bi bi-clock text-warning me-2"></i>
+                                    <strong>Duração:</strong> 6-8 horas
+                                </li>
+                                <li class="mb-2">
+                                    <i class="bi bi-geo-alt text-warning me-2"></i>
+                                    <strong>Projeção:</strong> Intenso
+                                </li>
+                                <li class="mb-2">
+                                    <i class="bi bi-droplet text-warning me-2"></i>
+                                    <strong>Concentração:</strong> Eau de Parfum
+                                </li>
+                                <li class="mb-2">
+                                    <i class="bi bi-gender-ambiguous text-warning me-2"></i>
+                                    <strong>Gênero:</strong> Masculino
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-4 col-lg-12">
+                            <h6 class="fw-bold mb-3">Notas Olfativas:</h6>
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="card border-0 bg-light text-center">
+                                        <div class="card-body py-3">
+                                            <i class="bi bi-flower1 text-warning display-6 mb-2"></i>
+                                            <h6 class="card-title mb-1">Notas de Topo</h6>
+                                            <p class="card-text small mb-0">Hortelã, Aldeídos Gelados</p><br>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="card border-0 bg-light text-center">
+                                        <div class="card-body py-3">
+                                            <i class="bi bi-flower2 text-warning display-6 mb-2"></i>
+                                            <h6 class="card-title mb-1">Notas de Coração</h6>
+                                            <p class="card-text small mb-0">Nota Titânio, Ozônio</p><br>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="card border-0 bg-light text-center">
+                                        <div class="card-body py-3">
+                                            <i class="bi bi-tree text-warning display-6 mb-2"></i>
+                                            <h6 class="card-title mb-1">Notas de Fundo</h6>
+                                            <p class="card-text small mb-0">Almíscar Branco, Vetiver</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="tab-content p-4 bg-white" id="descricaoTabsContent">
+                        <div class="tab-pane fade show active" id="descricao" role="tabpanel">
+                            <h4 class="mb-4">Sobre o Fluxo Titânico</h4>
+                            <p>O Fluxo Titânico é uma criação única que captura a sensação de velocidade e a força do metal. Desenvolvida pelos nossos mestres perfumistas, esta fragrância é fria, metálica e extremamente revigorante, perfeita para o homem moderno.</p>
+                            <p>Notas penetrantes de hortelã e aldeídos gelados abrem a composição de forma imediata, seguidas por um coração inovador com a nota de titânio, conferindo um toque metálico e futurista. O fundo limpo e potente proporciona uma fixação notável.</p>
+                            <p>Ideal para quem busca uma fragrância ousada e de alta performance, perfeita para o dia, esportes e para se destacar em qualquer ambiente.</p>
+                        </div>
+                        <br>
+                        <div class="tab-pane fade show active" id="especificacoes" role="tabpanel">
+                            <h4 class="mb-4">Especificações Técnicas</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul class="list-unstyled">
+                                        <li class="mb-2"><strong>Família Olfativa:</strong> Aromático Fougère Metálico</li>
+                                        <li class="mb-2"><strong>Concentração:</strong> Eau de Parfum</li>
+                                        <li class="mb-2"><strong>Duração na Pele:</strong> 6-8 horas</li>
+                                        <li class="mb-2"><strong>Projeção:</strong> Intensa</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul class="list-unstyled">
+                                        <li class="mb-2"><strong>Ingredientes:</strong> Alcohol, Fragrance, Water</li>
+                                        <li class="mb-2"><strong>Origem:</strong> Canadá</li>
+                                        <li class="mb-2"><strong>Volume Disponível:</strong> 30ml, 50ml, 100ml</li>
+                                        <li class="mb-2"><strong>Ano de Lançamento:</strong> 2013</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="tab-pane fade" id="cuidados" role="tabpanel">
+                            <h4 class="mb-4">Cuidados e Conservação</h4>
+                            <p>Para manter a qualidade do seu perfume Fluxo Titânico:</p>
+                            <ul>
+                                <li>Armazene em local fresco e seco, longe da luz solar direta.</li>
+                                <li>Evite exposição a temperaturas extremas.</li>
+                                <li>Mantenha o frasco bem fechado quando não estiver em uso.</li>
+                                <li>Não aplicar em pele irritada ou com ferimentos.</li>
+                                <li>Teste em pequena área antes do uso regular.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Você Também Pode Gostar</h2>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <img src="Imagens/Aura Bloom.jpg" 
+                             class="card-img-top" alt="Nocturne" style="height: 250px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Aura Bloom</h5>
+                            <p class="card-text small flex-grow-1">Essência floral que une o vigor do alecrim e a sensualidade luminosa do jasmim.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="text-warning fw-bold">R$ 199,90</span>
+                                <a href="aurabloom.html" class="text-decoration-none text-warning"><button class="btn btn-outline-warning btn-sm">Comprar</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <img src="Imagens/ameixa.jpg" 
+                             class="card-img-top" alt="Oceano" style="height: 250px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Nectar Imperial</h5>
+                            <p class="card-text small flex-grow-1">Essência floral suave e melada. Flor de ameixa, néctar de damasco e toque sutil de baunilha.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="text-warning fw-bold">R$ 185,90</span>
+                                <a href="nectarimperial.html" class="text-decoration-none text-warning"><button class="btn btn-outline-warning btn-sm">Comprar</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <img src="Imagens/baunilha de orquídeas.jpg" 
+                             class="card-img-top" alt="Éden" style="height: 250px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Pétales Foncés</h5>
+                            <p class="card-text small flex-grow-1">Baunilha doce e sensual. Acentuada pela orquídea e a profundidade da fava tonka.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="text-warning fw-bold">R$ 215,90</span>
+                                <a href="petalesfonces.html" class="text-decoration-none text-warning"><button class="btn btn-outline-warning btn-sm">Comprar</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <div class="position-relative">
+                            <img src="Imagens/p7.jpg" 
+                                 class="card-img-top" alt="Mystère" style="height: 250px; object-fit: cover;">
+                            <span class="position-absolute top-0 end-0 bg-danger text-white px-2 py-1 m-2 small rounded">Novo</span>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Ouro Oriental</h5>
+                            <p class="card-text small flex-grow-1">Mel silvestre e âmbar. Um gourmand quente, envolvente e rico, com toques de benjoim.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="text-warning fw-bold">R$ 205,90</span>
+                                <a href="ourooriental.html" class="text-decoration-none text-warning"><button class="btn btn-outline-warning btn-sm">Comprar</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 mb-4 mb-lg-0">
+                    <h5 class="mb-3">
+                        <i class=""><img class="w-50 text-center" src="Imagens/logo da empresa - Copia.png" alt=""></i>
+                    </h5>
+                    <p class="h6 fw-normal">Perfumes que contam histórias e despertam emoções. Descubra sua essência conosco.</p>
+                    <div>
+                        <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="mb-3">Navegação</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="novo 1.html" class="text-white text-decoration-none">Início</a></li>
+                        <li><a href="HISTORIA.HTML" class="text-white text-decoration-none">Nossa História</a></li>
+                        <li><a href="Perfumes.html" class="text-white text-decoration-none">Produtos</a></li>
+                        <li><a href="contato.html" class="text-white text-decoration-none">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="mb-3">Empresa</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="HISTORIA.HTML" class="text-white text-decoration-none">Sobre Nós</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Sustentabilidade</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Trabalhe Conosco</a></li>
+                        <li><a href="equipe.html" class="text-white text-decoration-none">Equipe</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5 class="mb-3">Contato</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="bi bi-geo-alt me-2"></i> Av. Paulista, 1000 - São Paulo, SP</li>
+                        <li class="mb-2"><i class="bi bi-telephone me-2"></i> (11) 9687-3432</li>
+                        <li class="mb-2"><i class="bi bi-envelope me-2"></i> contato@essenciareal.com</li>
+                    </ul>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.0980324107018!2d-46.65451252489083!3d-23.564922378797387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5994f2e15a7d%3A0xdeb92126793e5e90!2sAv.%20Paulista%2C%201000%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001310-100!5e0!3m2!1spt-BR!2sbr!4v1761592597719!5m2!1spt-BR!2sbr" width="120" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="col-lg-2"></iframe>
+            </div>
+            
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro | Essência Real</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+</head>
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="novo 1.html">
+                <i class=""><img class="w-50" src="Imagens/logo da empresa ofc.png" alt=""></i>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto h5">
+                    <li class="nav-item">
+                        <a class="nav-link" href="novo 1.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Perfumes.html">Perfumes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="HISTORIA.HTML">Nossa História</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="equipe.html">Equipe</a>
+                    </li>
+                </ul>
+                <div class="ms-3">
+                    <a href="login.html" class="btn btn-outline-warning me-2">Entrar</a>
+                    <a href="cadastro.html" class="btn btn-warning">Cadastrar</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="py-5 bg-dark">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card shadow-sm border-0">
+                        <div class="card-body p-5">
+                            <div class="text-center mb-5">
+                                <i class="bi bi-person-plus display-4 text-warning mb-3"></i>
+                                <h1 class="h2 fw-bold">Crie sua Conta</h1>
+                                <p class="text-muted">Junte-se à família Essência Pura e descubra um mundo de fragrâncias exclusivas</p>
+                            </div>
+
+                            <form>
+                                <div class="mb-4">
+                                    <h5 class="fw-bold mb-3 border-bottom pb-2">
+                                        <i class="bi bi-person me-2"></i>Dados Pessoais
+                                    </h5>
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <label for="nome" class="form-label">Nome Completo *</label>
+                                            <input type="text" class="form-control" id="nome" required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="cpf" class="form-label">CPF *</label>
+                                            <input type="text" class="form-control" id="cpf" required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="dataNascimento" class="form-label">Data de Nascimento *</label>
+                                            <input type="date" class="form-control" id="dataNascimento" required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="genero" class="form-label">Gênero</label>
+                                            <select class="form-select" id="genero">
+                                                <option value="" selected>Selecione</option>
+                                                <option>Feminino</option>
+                                                <option>Masculino</option>
+                                                <option>Outro</option>
+                                                <option>Prefiro não informar</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mb-4">
+                                    <h5 class="fw-bold mb-3 border-bottom pb-2">
+                                        <i class="bi bi-telephone me-2"></i>Contato
+                                    </h5>
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <label for="email" class="form-label">E-mail *</label>
+                                            <input type="email" class="form-control" id="email" required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="confirmarEmail" class="form-label">Confirmar E-mail *</label>
+                                            <input type="email" class="form-control" id="confirmarEmail" required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="telefone" class="form-label">Telefone *</label>
+                                            <input type="tel" class="form-control" id="telefone" required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="celular" class="form-label">Celular</label>
+                                            <input type="tel" class="form-control" id="celular">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mb-4">
+                                    <h5 class="fw-bold mb-3 border-bottom pb-2">
+                                        <i class="bi bi-house me-2"></i>Endereço
+                                    </h5>
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <label for="cep" class="form-label">CEP *</label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" id="cep" required>
+                                                <button class="btn btn-outline-secondary" type="button">Buscar</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="logradouro" class="form-label">Logradouro *</label>
+                                            <input type="text" class="form-control" id="logradouro" required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="numero" class="form-label">Número *</label>
+                                            <input type="number" class="form-control" id="numero" required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="complemento" class="form-label">Complemento</label>
+                                            <input type="text" class="form-control" id="complemento">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="bairro" class="form-label">Bairro *</label>
+                                            <input type="text" class="form-control" id="bairro" required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="cidade" class="form-label">Cidade *</label>
+                                            <input type="text" class="form-control" id="cidade" required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="estado" class="form-label">Estado *</label>
+                                            <select class="form-select" id="estado" required>
+                                                <option value="" selected disabled>Selecione</option>
+                                                <option>AC</option>
+                                                <option>AL</option>
+                                                <option>AP</option>
+                                                <option>AM</option>
+                                                <option>BA</option>
+                                                <option>CE</option>
+                                                <option>DF</option>
+                                                <option>ES</option>
+                                                <option>GO</option>
+                                                <option>MA</option>
+                                                <option>MT</option>
+                                                <option>MS</option>
+                                                <option>MG</option>
+                                                <option>PA</option>
+                                                <option>PB</option>
+                                                <option>PR</option>
+                                                <option>PE</option>
+                                                <option>PI</option>
+                                                <option>RJ</option>
+                                                <option>RN</option>
+                                                <option>RS</option>
+                                                <option>RO</option>
+                                                <option>RR</option>
+                                                <option>SC</option>
+                                                <option>SP</option>
+                                                <option>SE</option>
+                                                <option>TO</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mb-4">
+                                    <h5 class="fw-bold mb-3 border-bottom pb-2">
+                                        <i class="bi bi-shield-lock me-2"></i>Segurança
+                                    </h5>
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <label for="senha" class="form-label">Senha *</label>
+                                            <input type="password" class="form-control" id="senha" required>
+                                            <div class="form-text">
+                                                A senha deve conter pelo menos 8 caracteres, incluindo letras maiúsculas, minúsculas e números.
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="confirmarSenha" class="form-label">Confirmar Senha *</label>
+                                            <input type="password" class="form-control" id="confirmarSenha" required>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mb-4">
+                                    <h5 class="fw-bold mb-3 border-bottom pb-2">
+                                        <i class="bi bi-heart me-2"></i>Preferências
+                                    </h5>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <label class="form-label">Quais tipos de fragrâncias você mais gosta?</label>
+                                            <div class="row g-2">
+                                                <div class="col-md-4">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="floral">
+                                                        <label class="form-check-label" for="floral">
+                                                            Floral
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="amadeirado">
+                                                        <label class="form-check-label" for="amadeirado">
+                                                            Amadeirado
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="citrico">
+                                                        <label class="form-check-label" for="citrico">
+                                                            Cítrico
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="oriental">
+                                                        <label class="form-check-label" for="oriental">
+                                                            Oriental
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="fresco">
+                                                        <label class="form-check-label" for="fresco">
+                                                            Fresco
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="doce">
+                                                        <label class="form-check-label" for="doce">
+                                                            Doce
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mb-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="termos" required>
+                                        <label class="form-check-label" for="termos">
+                                            Li e aceito os <a href="#" class="text-warning">Termos de Uso</a> e <a href="#" class="text-warning">Política de Privacidade</a> *
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="newsletter">
+                                        <label class="form-check-label" for="newsletter">
+                                            Desejo receber novidades, ofertas especiais e informações sobre lançamentos
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="d-grid gap-2">
+                                    <button type="submit" class="btn btn-warning btn-lg">
+                                        <i class="bi bi-person-plus me-2"></i>Criar Conta
+                                    </button>
+                                </div>
+
+                                <div class="text-center mt-4">
+                                    <p class="mb-0">
+                                        Já tem uma conta? 
+                                        <a href="login.html" class="text-warning fw-bold">Faça login aqui</a>
+                                    </p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-5 bg-white">
+        <div class="container">
+            <h2 class="text-center mb-5">Vantagens de ser Cliente Essência Pura</h2>
+            <div class="row g-4">
+                <div class="col-md-4 text-center">
+                    <div class="bg-warning rounded-circle mx-auto d-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                        <i class="bi bi-truck text-white fs-4"></i>
+                    </div>
+                    <h5>Frete Grátis</h5>
+                    <p class="text-muted">Em compras acima de R$ 200 em todo o Brasil</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="bg-warning rounded-circle mx-auto d-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                        <i class="bi bi-gift text-white fs-4"></i>
+                    </div>
+                    <h5>Ofertas Exclusivas</h5>
+                    <p class="text-muted">Descontos especiais e primeiros acesso a lançamentos</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="bg-warning rounded-circle mx-auto d-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                        <i class="bi bi-star text-white fs-4"></i>
+                    </div>
+                    <h5>Programa de Fidelidade</h5>
+                    <p class="text-muted">Acumule pontos e troque por produtos e benefícios</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 mb-4 mb-lg-0">
+                    <h5 class="mb-3">
+                        <i class=""><img class="w-50 text-center" src="Imagens/logo da empresa - Copia.png" alt=""></i>
+                    </h5>
+                    <p class="h6 fw-normal">Perfumes que contam histórias e despertam emoções. Descubra sua essência conosco.</p>
+                    <div>
+                        <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="mb-3">Navegação</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="novo 1.html" class="text-white text-decoration-none">Início</a></li>
+                        <li><a href="HISTORIA.HTML" class="text-white text-decoration-none">Nossa História</a></li>
+                        <li><a href="Perfumes.html" class="text-white text-decoration-none">Produtos</a></li>
+                        <li><a href="contato.html" class="text-white text-decoration-none">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="mb-3">Empresa</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="HISTORIA.HTML" class="text-white text-decoration-none">Sobre Nós</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Sustentabilidade</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Trabalhe Conosco</a></li>
+                        <li><a href="equipe.html" class="text-white text-decoration-none">Equipe</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5 class="mb-3">Contato</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="bi bi-geo-alt me-2"></i> Av. Paulista, 1000 - São Paulo, SP</li>
+                        <li class="mb-2"><i class="bi bi-telephone me-2"></i> (11) 9687-3432</li>
+                        <li class="mb-2"><i class="bi bi-envelope me-2"></i> contato@essenciareal.com</li>
+                    </ul>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.0980324107018!2d-46.65451252489083!3d-23.564922378797387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5994f2e15a7d%3A0xdeb92126793e5e90!2sAv.%20Paulista%2C%201000%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001310-100!5e0!3m2!1spt-BR!2sbr!4v1761592597719!5m2!1spt-BR!2sbr" width="120" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="col-lg-2"></iframe>
+            </div>
+            
+        </div>
+    </footer>
+</body></html>
